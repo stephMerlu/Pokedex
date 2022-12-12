@@ -1,0 +1,262 @@
+.header {
+    background-image: url("image/pokemon header.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        width: 10%;
+    }
+    
+    .titre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .titre1 {
+        width: 30%;
+    }
+
+}
+
+.carte {
+    background-image: url("image/Fond_nuage.jpeg");
+    background-size: 100% 100%;
+
+    .navbar {
+        width: 100%;
+        border: solid 5px #f1c40f;
+        position: relative;
+        top:40px;  
+    }
+    
+    .col {
+        padding-top: 80px;
+    }
+
+    .col img {
+        box-shadow: 10px 5px 5px #2F4858;
+    }
+
+    .col img:hover {
+        transform:scale(1.2)
+    }
+    
+    .carousel-inner {
+        display: flex;
+        justify-content:space-around;
+    }
+    
+    .carousel-item img {
+        width: 50%;
+        padding-top: 50px;
+    }
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header.head {
+    background-image: url("image/pokedexFond.jpg");
+    background-size: 100% 100%;
+    height: 500px;
+
+    .titre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .titre1 {
+        width: 100%;
+        margin-top: 150px;
+    }
+}
+
+ .pokedex {
+    display: flex;
+
+    .pokedex-gauche {
+        width: 100%;
+        border: 20px solid rgba(252,89,72,255);
+        
+        h1, h2 {
+            font-family: 'Indie flower';
+            color: #00887c;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Klee One', cursive;
+            color: #f1c40f; 
+        }
+    
+         .presentation {
+            display: flex;
+            justify-content: space-around;
+         }
+    
+         .presentation1 {
+            display: flex;
+         }
+    
+         .photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+         }
+    
+         .description {
+            padding-right: 20px;
+            padding-left: 50px;
+         }
+         
+         .pouvoir {
+            display: flex;
+         }
+    
+         .attaque {
+            width: 50%;
+            padding-left: 20px;
+         }
+    
+         .faiblesse {
+            width: 50%;
+            padding-left: 20px;
+         }
+            
+    }
+    
+     .pokedex-droit {
+        border: 40px solid rgba(252,89,72,255);
+        width: 50%;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Indie flower';
+            color:#f1c40f;
+            font-size: 50px;
+         }
+    
+         .ecran {
+            margin-top: -157px;
+            width: 100%;
+            height: 100%;
+            background-color: #00887c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+    
+         .ecran img {
+            width: 250px;
+         }
+    }
+ }
+
+.ecran img {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left:0%
+        width: 100%;
+    }
+}
+
+ @media (max-width: 575.98px) {
+
+    .presentation1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+     .pouvoir {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .evolution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .evolution img {
+        width: 250px;
+    }
+
+    .pokedex-droit {
+        display: none;
+    }  
+
+    .header {
+        height: 150px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .titre1 {
+        margin-top: 20px;
+    }
+
+    .container.text-center .row {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+   
+ @media (max-width: 1180px) {
+
+    .evolution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .evolution img {
+        width: 250px;
+    }
+
+    .pokedex-droit {
+        display: none;
+    }
+
+    .container.text-center .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
+
+ @media (min-width: 1180px) {
+
+    .evolution {
+        display: none;
+    }
+ }
